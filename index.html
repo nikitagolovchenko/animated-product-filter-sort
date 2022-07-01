@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter sorting</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="container">
+        <section class="section">
+          <div class="controls">
+            <div class="controls__item">
+              <ul class="filter">
+                <li class="filter__item"><a class="filter__link filter__link--active" href="#">all</a></li>
+                <li class="filter__item"><a class="filter__link" href="#">сar</a></li>
+                <li class="filter__item"><a class="filter__link" href="#">bike</a> </li>
+                <li class="filter__item"> <a class="filter__link" href="#">technology</a></li>
+                <li class="filter__item"><a class="filter__link" href="#">people</a></li>
+                <li class="filter__item"><a class="filter__link" href="#">event</a></li>
+                <li class="filter__item"><a class="filter__link" href="#">plant</a></li>
+              </ul>
+            </div>
+            <div class="controls__item">
+              <span class="controls__text">Sort by:</span>
+              <select class="select" id="sort-select" name="sort">
+                <option value="name|asc" selected>Name asc</option>
+                <option value="name|desc">Name desc</option>
+                <option value="price|asc">Price asc</option>
+                <option value="price|desc">Price desc</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="product">
+            <article class="card product__card">
+              <a class="visual" href="#">
+                <img class="visual__img" src="https://via.placeholder.com/600/92c952" alt="image description">
+              </a>
+              <div class="card__body">
+                <ul class="category card__category">
+                  <li class="category__item">сar</li>
+                  <li class="category__item">technology</li>
+                </ul>
+                <h3 class="card__title"><a href="#">Product 1</a></h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam alias
+                  animi, quae est at.</p>
+              </div>
+              <div class="card__footer">
+                <strong class="card__price">75 $</strong>
+              </div>
+            </article>
+
+            <article class="card product__card">
+              <a class="visual" href="#">
+                <img class="visual__img" src="https://via.placeholder.com/600/771796" alt="image description">
+              </a>
+              <div class="card__body">
+                <ul class="category card__category">
+                  <li class="category__item">сar</li>
+                </ul>
+                <h3 class="card__title"><a href="#">Omega 3</a></h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam alias
+                  animi, quae est at.</p>
+              </div>
+              <div class="card__footer">
+                <strong class="card__price">90 $</strong>
+              </div>
+            </article>
+
+            <article class="card product__card">
+              <a class="visual" href="#">
+                <img class="visual__img" src="https://via.placeholder.com/600/24f355" alt="image description">
+              </a>
+              <div class="card__body">
+                <ul class="category card__category">
+                  <li class="category__item">event</li>
+                  <li class="category__item">people</li>
+                </ul>
+                <h3 class="card__title"><a href="#">New project</a></h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam alias
+                  animi, quae est at.</p>
+              </div>
+              <div class="card__footer">
+                <strong class="card__price">40 $</strong>
+              </div>
+            </article>
+
+            <article class="card product__card">
+              <a class="visual" href="#">
+                <img class="visual__img" src="https://via.placeholder.com/600/d32776" alt="image description">
+              </a>
+              <div class="card__body">
+                <ul class="category card__category">
+                  <li class="category__item">animal</li>
+                  <li class="category__item">event</li>
+                </ul>
+                <h3 class="card__title"><a href="#">Individual</a></h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam alias
+                  animi, quae est at.</p>
+              </div>
+              <div class="card__footer">
+                <strong class="card__price">40 $</strong>
+              </div>
+            </article>
+
+            <article class="card product__card">
+              <a class="visual" href="#">
+                <img class="visual__img" src="https://via.placeholder.com/600/b0f7cc" alt="image description">
+              </a>
+              <div class="card__body">
+                <ul class="category card__category">
+                  <li class="category__item">animal</li>
+                  <li class="category__item">event</li>
+                  <li class="category__item">plant</li>
+                </ul>
+                <h3 class="card__title"><a href="#">Animals event</a></h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam alias
+                  animi, quae est at.</p>
+              </div>
+              <div class="card__footer">
+                <strong class="card__price">35 $</strong>
+              </div>
+            </article>
+
+            <article class="card product__card">
+              <a class="visual" href="#">
+                <img class="visual__img" src="https://via.placeholder.com/600/66b7d2" alt="image description">
+              </a>
+              <div class="card__body">
+                <ul class="category card__category">
+                  <li class="category__item">car</li>
+                  <li class="category__item">bike</li>
+                  <li class="category__item">technology</li>
+                </ul>
+                <h3 class="card__title"><a href="#">Bike fest</a></h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam alias
+                  animi, quae est at.</p>
+              </div>
+              <div class="card__footer">
+                <strong class="card__price">90 $</strong>
+              </div>
+            </article>
+
+            <article class="card product__card">
+              <a class="visual" href="#">
+                <img class="visual__img" src="https://via.placeholder.com/600/66b7d2" alt="image description">
+              </a>
+              <div class="card__body">
+                <h3 class="card__title"><a href="#">No item</a></h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam alias
+                  animi, quae est at.</p>
+              </div>
+              <div class="card__footer">
+                <strong class="card__price">0 $</strong>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script defer src="./main.js"></script>
+</body>
+
+</html>
